@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习资料</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 继承之前的全局样式 */
+        :root {
+            --primary-color: #ff69b4;
+            --dark-color: #212529;
+            --hover-color: #ff8dc7;
+        }
+
+        /* 新增学习资料页面特定样式 */
+        .content-section {
+            padding: 2rem 0;
+            min-height: calc(100vh - 76px);
+        }
+
+        .card {
+            border: 1px solid var(--primary-color);
+            transition: transform 0.3s ease;
+            height: 100%;
+            background-color: rgba(33, 37, 41, 0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .card-title {
+            color: var(--primary-color);
+        }
+
+        .software-item {
+            border-left: 3px solid var(--primary-color);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: white;
+        }
+
+        .software-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .pdf-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .pdf-link:hover {
+            color: var(--hover-color);
+        }
+
+        .website-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .website-img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+      <!-- 导航栏 -->
+       <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link rounded-pill px-4" href="index.html">
+                            <i class="fas fa-home"></i> 首页
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link rounded-pill px-4" href="index1.html">
+                            <i class="fas fa-user"></i>学习资料
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2"></li>
+                        <a class="nav-link rounded-pill px-4" href="index2.html">
+                            <i class="fas fa-user"></i>尝试制作
+                        </a>
+                    
+                    <li class="nav-item mx-2">
+                        <a class="nav-link rounded-pill px-4" href="index3.html">
+                            <i class="fas fa-code"></i>关于我
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航栏部分保持不变 -->
+    <!-- 主要内容区域 -->
+<div class="content-section">
+    <div class="container">
+            <div class="row">
+                <!-- 左侧辅助软件部分 (1/3宽度) -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">辅助软件</h3>
+                          <img src="images/编程软件.jpg" alt="软件1" class="software-img mb-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧内容区域 (2/3宽度) -->
+                <div class="col-md-8">
+                    <!-- 上方课程内容 -->
+                    <div class="card mb-4" style="height: calc(66.66% - 1rem);">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">课程内容</h3>
+                            
+                            <div class="course-content">
+                                <h5>新媒体交互设计</h5>
+                              <p>新媒体交互是在传统多媒体的基础上加入了交互功能，通过交互行为并以视觉、触觉、听觉等呈现信
+                                  息，达到信息传递的目的。目前主要基于各种智能设备的窗口、菜单、图标、可视化图形界面与人实现
+                                  交互。大家每天都在通过手机交互完成接受反馈各种信息：点击一个按钮、观看/暂停一个视频、用手机
+                                  阅读一篇文章，用手指上下左右滑动/翻页，这些动作都是交互，而与图片、视频、音频等媒介交互统称
+                              为新媒体交互</p>
+                              <p>本课程是网络新媒体专业的选修课，是一门偏实践的计算机课程。
+                                   力求以简单高效地方法生产出与新闻内容的交互式网页页面，为后续的课程提供可视化展示的平台。
+                                    重点培养学生的动手能力，激发学生的学习兴趣，具备举一反三、自主创新的能力。</p>
+                                <p>网络新媒体专业网页设计课介绍
+
+                                            网络新媒体专业中的网页设计课程，是一门集理论知识与实践技能于一体的综合性课程。它旨在培养学生掌握网页设计的基本原理、方法和技能，以便在未来的新媒体工作中能够独立完成网页的设计与制作。
+
+                                            课程内容涵盖了网页设计的各个方面，包括HTML、CSS、JavaScript等前端开发技术的基础知识，以及网页布局、色彩搭配、用户体验设计等设计理念。学生将通过课堂讲授、案例分析、实验操作等多种形式，系统地学习网页设计的各个方面。
+
+                                            在实践环节，网页设计课程注重培养学生的动手能力。学生将分组进行网页设计项目，从需求分析、规划设计到编码实现，全程参与项目的各个环节。这种项目驱动的教学方式，不仅能够让学生更好地掌握网页设计的实际操作技能，还能够培养他们的团队协作能力和解决问题的能力。
+
+                                            此外，网页设计课程还注重培养学生的创新思维和审美能力。通过学习网页设计，学生将能够学会如何运用创新的设计理念和审美技巧，打造出既符合用户需求又具有吸引力的网页作品。
+
+                                            网页设计课程的教学大纲中，还特别强调了作品的评价标准，包括工作量、创意想法、UI设计基本准则、系统结构清晰度以及实用性等方面。这些评价标准不仅能够帮助学生明确学习目标，还能够引导他们在学习过程中注重作品的全面性和综合性。
+
+                                            总之，网络新媒体专业的网页设计课程是一门实用性强的课程，它将为学生未来的新媒体职业生涯奠定坚实的基础。</p>
+                                
+                              <a href="新媒体交互设计.pdf"="pdf-link">
+                                    <i class="far fa-file-pdf"></i> 更多详情请查看PDF
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 下方学习网站 -->
+                    <div class="card" style="height: calc(33.33% - 1rem);">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">学习网站</h3>
+                            
+                            <div class="website-item">
+                              <img src="images/学习网站3.jpg" alt="MDN" class="website-img">
+                                <div>
+                                    <h5>菜鸟教程</h5>
+                                    <p class="mb-2">最全面的Web开发文档</p>
+                                    <a href="https://www.runoob.com/w3c/w3c-tutorial.html" target="_blank" class="btn btn-sm btn-outline-primary">访问网站</a>
+                                </div>
+                            </div>
+
+                            <div class="website-item">
+                              <img src="images/学习网站1.jpg"="W3Schools" class="website-img">
+                                <div>
+                                    <h5>W3Schools</h5>
+                                    <p class="mb-2">Web技术学习平台</p>
+                                    <a href="https://www.w3schools.com" target="_blank" class="btn btn-sm btn-outline-primary">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </div>
+</div>
+
+    <!-- Bootstrap JS 和依赖 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
